@@ -8,7 +8,6 @@ public class DestroyBall : MonoBehaviour
         {
             Score.Instance.remainingBalls();
             Destroy(other.gameObject);
-            SpawnBall.Instance.ballSpawn();
         }
     }
 }

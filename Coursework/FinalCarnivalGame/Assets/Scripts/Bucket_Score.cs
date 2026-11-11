@@ -9,7 +9,6 @@ public class Bucket_Score : MonoBehaviour
             Score.Instance.addScore();
             Score.Instance.remainingBalls();
             Destroy(other.gameObject);
-            SpawnBall.Instance.ballSpawn();
         }
     }
 }
