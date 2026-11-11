@@ -9,7 +9,8 @@ public class Score : MonoBehaviour
     public GameObject gameOverOverlay;
     public GameObject gameOverText;
     public GameObject gameOverButton;
-
+    public GameObject gameOverScore;
+    public TMP_Text gameOverScore_UI;
 
     public static Score Instance;
 
@@ -25,8 +26,11 @@ public class Score : MonoBehaviour
         gameOverButton.SetActive(false);
         gameOverOverlay.SetActive(false);
         gameOverText.SetActive(false);
+        gameOverScore.SetActive(false);
         Balls = 10;
         Ball_UI.text = "Balls: " + Balls;
+        Ball_Score = 0;
+        Score_UI.text = "Score: " + Ball_Score;
     }
 
     // Update is called once per frame
@@ -50,6 +54,8 @@ public class Score : MonoBehaviour
             gameOverButton.SetActive(true);
             gameOverOverlay.SetActive(true);
             gameOverText.SetActive(true);
+            gameOverScore.SetActive(true);
+            gameOverScore_UI.text = "Score: " + Ball_Score;
         }
         else
         {
