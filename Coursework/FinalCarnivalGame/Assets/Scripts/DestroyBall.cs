@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class DestroyBall : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+            Score.Instance.remainingBalls();
+            Destroy(other.gameObject);
+            SpawnBall.Instance.ballSpawn();
+        }
     }
 }
