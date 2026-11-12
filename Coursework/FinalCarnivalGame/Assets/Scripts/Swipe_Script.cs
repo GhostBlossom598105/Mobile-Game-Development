@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Swipe_Script : MonoBehaviour
 {
-    bool hasSwiped = false;
+    public int swipeNum;
 
     Vector2 startPos;
     Vector2 endPos;
@@ -16,6 +16,7 @@ public class Swipe_Script : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        swipeNum = 0;
     }
 
     void Update()
@@ -23,7 +24,7 @@ public class Swipe_Script : MonoBehaviour
         // This section of code is for testing on my PC as it was much easier for me to test on PC then go to phone rather than constantly switching between the two.
         if (Mouse.current != null)
         {
-            if (Mouse.current.leftButton.wasPressedThisFrame && !hasSwiped) //This registers where the mouse was when it was initially pressed
+            if (Mouse.current.leftButton.wasPressedThisFrame) //This registers where the mouse was when it was initially pressed
             {
                 startPos = Mouse.current.position.ReadValue();
                 isDragging = true;
@@ -41,7 +42,7 @@ public class Swipe_Script : MonoBehaviour
         {
             var touch = Touchscreen.current.primaryTouch; //
 
-            if (touch.press.wasPressedThisFrame && !hasSwiped)
+            if (touch.press.wasPressedThisFrame)
             {
                 startPos = touch.position.ReadValue();
                 isDragging = true;
@@ -57,7 +58,6 @@ public class Swipe_Script : MonoBehaviour
 
     void ThrowBall()
     {
-        //hasSwiped = true;
 
         Vector2 direction = endPos - startPos;
 

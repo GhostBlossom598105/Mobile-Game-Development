@@ -131,7 +131,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6c273a003ecb7034f92f5ec8cbec840f, type: 2}
+  m_Material: {fileID: 6200000, guid: 9bd3e60d682c49b40af21f7946fb8feb, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -169,4 +169,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6195db5be4e2c6a4eaf3342cc6a5552c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  swipeNum: 0
   throwForce: 0.01
