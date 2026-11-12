@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 107}
+  m_AnchoredPosition: {x: 0, y: 127}
   m_SizeDelta: {x: 800, y: 46.036}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249456506
@@ -340,8 +340,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -635,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc7f61029149f8e468b720d34922f321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  Week8Monetisation: {fileID: 944111441}
   gameOverOverlay: {fileID: 270661787}
   gameOverText: {fileID: 178065699}
   gameOverButton: {fileID: 2080815633}
@@ -1124,10 +1125,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 1, g: 0.6462264, b: 0.9460547, a: 1}
+    m_PressedColor: {r: 0.754717, g: 0.3025988, b: 0.7262647, a: 1}
+    m_SelectedColor: {r: 0.5736433, g: 0.15979885, b: 0.5943396, a: 1}
+    m_DisabledColor: {r: 0.50980395, g: 0.50980395, b: 0.50980395, a: 0.8156863}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1145,7 +1146,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 662922176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 944111445}
+        m_TargetAssemblyTypeName: CMP5402.Week8Lab.Week8MonetisationLab, Assembly-CSharp
+        m_MethodName: TryTestPurchase
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662922176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,7 +1214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762556068
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1555,7 +1568,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &944111442
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1632,11 +1645,11 @@ MonoBehaviour:
   status: {fileID: 249456506}
   rewardButton: {fileID: 1942502513}
   purchaseButton: {fileID: 662922175}
-  testProfile: lab-first-run
-  adOutcome: 0
+  testProfile: lab-completed-ad
+  adOutcome: 2
   shopAvailable: 1
   simulateSaveFailure: 0
-  testOrderId: order-a
+  testOrderId: order-b
 --- !u!1 &989206286
 GameObject:
   m_ObjectHideFlags: 0
@@ -3150,7 +3163,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1942502514}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 944111445}
+        m_TargetAssemblyTypeName: CMP5402.Week8Lab.Week8MonetisationLab, Assembly-CSharp
+        m_MethodName: TryTestReward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1942502514
 MonoBehaviour:
   m_ObjectHideFlags: 0
