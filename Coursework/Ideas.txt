@@ -1,0 +1,11 @@
+Limited number of swipes per level
+Gradual increase in difficulty
+Obstacles which can make you fail when hit
+Different skins for the ball and the basket
+New level complete screen (star system maybe?)
+Level failed screen
+SFX
+Music
+Pixel art made on aesprite(?)
+
+Levels:
