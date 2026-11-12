@@ -6,6 +6,9 @@ using TMPro;
 public class Score : MonoBehaviour
 {
 
+    public GameObject Week8Monetisation;
+
+
     public GameObject gameOverOverlay;
     public GameObject gameOverText;
     public GameObject gameOverButton;
@@ -27,6 +30,7 @@ public class Score : MonoBehaviour
         gameOverOverlay.SetActive(false);
         gameOverText.SetActive(false);
         gameOverScore.SetActive(false);
+        Week8Monetisation.SetActive(false);
         Balls = 10;
         Ball_UI.text = "Balls: " + Balls;
         Ball_Score = 0;
@@ -55,6 +59,7 @@ public class Score : MonoBehaviour
             gameOverOverlay.SetActive(true);
             gameOverText.SetActive(true);
             gameOverScore.SetActive(true);
+            Week8Monetisation.SetActive(true);
             gameOverScore_UI.text = "Score: " + Ball_Score;
         }
         else
