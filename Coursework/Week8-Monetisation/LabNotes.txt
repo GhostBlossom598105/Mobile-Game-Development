@@ -1,0 +1,39 @@
+Lab 8 notes:
+
+Task 4 - Running the test matrix in my own game (40 minutes)
+
+Tasks:
+1. Unavailable ad and shop
+	Expected Result: Both of the buttons should be unavailable, however, the free route should still be available
+	Observed Result: The buttons were the unavailable colour chosen and didn't respond when clicked, I could return to the menu as normal.
+	Pass/Fail: Pass
+	
+2. Cancelled ad
+	Expected Result: The ad button should be possible to be clicked, however, the balance should remain as 0 and an error message should appear.
+	Observed Result: The ad button was clickable, showcased an error when clicked, and the balance remained at 0
+	Pass/Fail: Pass
+	
+3. Reward earned once:
+	Expected Result: The ad button should be possible to be clicked and, when clicked, should grant 10 lab coins and should become unavailable to be clicked.
+	Observed Result: The ad button was clickable, granted 10 lab coins, and was unable to be clicked after the first click.
+	Pass/Fail: Pass
+	
+4. First order and replay:
+	Expected Result: Test purchase should not grant coins after it has been pressed once, however, it should give coins on the first press.
+	Observed Result: When test purchase was clicked, it granted 100 lab coins (turning the total to 110), if clicked again it stated it was a duplicate purchase and granted no coins.
+	Pass/Fail: Pass
+	
+5. Failed save:
+	Expected Result: When test purchase is clicked, the overall total should remain at 110 and a message should show up.
+	Observed Result: When i clicked the button, i gained no extra coins, leaving my total at 110, and a message showed up stating a save failure occured.
+	Pass/Fail: Pass
+	
+6. Retry same order:
+	Expected Result: Due to being on 'order-b' and not 'order-a', the purchase button should work and add 100 more coins to our total when clicked, leading to a total of 210 coins, when clicked again it should stay at 210 and not grant more coins.
+	Observed Result: When the purchase button was clicked, i gained 100 lab coins, changing my total to 210, however, when i tried clicking it again it gave no coins.
+	Pass/Fail: Pass
+	
+7. Restart and recheck
+	Expected Result: The coins overall should remain at 210 and shouldn't have reverted back to 0.
+	Observed Result: The balance remained at 210 lab coins and did not revert.
+	Pass/Fail: Pass
